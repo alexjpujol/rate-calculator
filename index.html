@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Label Rate Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+            <nav>
+                <img src="spotify.png">
+                <h1>Spotify Label Rate Calculator</h1>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="col-sm-8">
+                <form id="form">
+                    <ol>
+                        <li><strong>Choose your label:</strong></li>
+                        <select id="label" name="label">
+                            <option value="umg" selected>UMG</option>
+                            <option value="sony">Sony</option>
+                            <option value="warner">Warner</option>
+                            <option value="merlin">Merlin</option>
+                        </select>
+                        <li><strong>Choose your product:</strong></li>
+                        <select id="product" name="product">
+                            <option value="audioeveryhwere" selected>Audio Everywhere</option>
+                            <option value="sponsoredsessions">Sponsored Sessions</option>
+                            <option value="mobileoverlay">Mobile Overlay</option>
+                            <option value="desktopoverlay">Desktop Overlay</option>
+                            </select>
+                        <li><strong>Choose your targeting parameters:</strong></li>
+                        <input class="targeting" type="checkbox" value="dma">DMA
+                        <input class="targeting" type="checkbox" value="city">City
+                        <input class="targeting" type="checkbox" value="genre">Genre
+                        <input class="targeting" type="checkbox" value="playlist">Playlist
+                        <li><strong>Calculate:</strong></li>
+                        <button type="button" onclick="calculate()">Calculate</button>
+                        <button type="reset">Reset</button>
+                    </ol>
+                </form>
+                <div id="output">
+                    <strong>Your rate:</strong>
+                    <div id="rate"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

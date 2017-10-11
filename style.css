@@ -1,0 +1,44 @@
+nav {
+    background-color: black;
+    height: 10%;
+}
+
+nav h1 {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+nav img {
+    min-height: 100px;
+    max-height: 15vh;
+    padding: 10px;
+    display: inline-block;
+}
+
+form {
+    margin-top: 5%
+}
+
+form li {
+    margin: 3%
+}
+
+form select, button {
+    margin-left: 5%
+}
+
+form input {
+    margin: 1%;
+    margin-left: 5%
+}
+
+#output {
+    margin-left: 6%
+}
+
+#rate {
+    font-weight: 700;
+    font-size: 18px
+}
