@@ -24,7 +24,7 @@ const labels =  [
     }
 ]
 
-premiums = {
+const premiums = {
     dma: 1.1,
     city: 1.2,
     genre: 1.2,
@@ -98,7 +98,7 @@ function calculate() {
         return accumulator * currentValue;
     }, rate)
 
-    finalRate = Math.round(finalRate * 100)/100;
+    finalRate = finalRate.toFixed(2);
 
     
     document.getElementById("rate").innerText = "$ " + finalRate;
