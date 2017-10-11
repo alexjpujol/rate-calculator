@@ -1,0 +1,25 @@
+{
+  "name": "rate-calculator",
+  "version": "1.0.0",
+  "description": "Spotify rate calculator for labels",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexjpujol/rate-calculator.git"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Alex Pujol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexjpujol/rate-calculator/issues"
+  },
+  "homepage": "https://github.com/alexjpujol/rate-calculator#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
